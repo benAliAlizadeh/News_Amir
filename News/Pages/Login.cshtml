@@ -1,0 +1,36 @@
+﻿@page
+@model News.Pages.LoginModel
+@{
+    ViewData["Title"] = "login";
+}
+
+
+
+<div class="container text-center">
+    <h1 class="display-4">Login</h1>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <form method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+                    <label>UserName</label><br />
+                    <input style="width: 300px;" type="text">
+                    <br />
+                    <br />
+                    <label>Password</label><br />
+                    <input style="width: 300px;" type="text">
+                    <br />
+                    <br />
+                    <button type="submit" class="btn btn-info"> Login</button>
+
+                </form>
+                
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>
